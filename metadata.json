@@ -1,0 +1,6 @@
+{
+  "name": "Typeform Clone",
+  "description": "A high-fidelity conversational form builder and respondent experience matching Typeform's signature one-question-at-a-time design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
