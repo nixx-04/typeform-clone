@@ -126,3 +126,9 @@ Follow these instructions to run the application on your computer:
 1. **Express + Vite Full-stack Middleware Integration**: To support instant response logging, stats aggregation, dynamic thematic layouts, and direct CSV file downloads, we configured a robust full-stack Express architecture integrated with Vite's development middleware.
 2. **Deep-Linking Hash Router**: To maintain reliable previews and client-state persistences inside sandboxed browser frames, we built a highly-tuned reactive client-side hash router (`#/`, `#/builder/:id`, `#/results/:id`, `#/form/:link`). This guarantees shared URLs can be entered, reloaded, or accessed directly in any browser tab without causing server 404s.
 3. **History Traversal (`visitedHistory` Stack)**: When a respondent navigates a form containing conditional logic jumps, they might skip over several questions. To make the "Go Back" button work perfectly, we implement a path history stack that tracks exactly which question index was previously active, permitting backwards/forwards navigations of high logical complexity with absolute accuracy.
+
+---
+
+## Live Demo Link
+
+https://typeform-clone-ecru.vercel.app/
