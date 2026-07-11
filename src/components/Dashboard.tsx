@@ -27,6 +27,7 @@ import { Form } from "../types";
 import { AskFeatureGif, ActFeatureGif, LearnFeatureGif } from "./InteractiveGifs";
 import { useAuth } from "../context/AuthContext";
 import { apiFetch } from "../lib/api";
+import { Logo } from "./Logo";
 
 interface DashboardProps {
   onNavigate: (route: string) => void;
@@ -194,11 +195,9 @@ export default function Dashboard({ onNavigate, showNotification, darkMode, onTo
       {/* Top Banner/Header */}
       <header className="h-16 mb-6 flex items-center justify-between px-6 bg-white dark:bg-[#1C1C1E] border border-black dark:border-[#a78bfa] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(167,139,250,1)] sticky top-0 z-20 transition-all duration-200">
         <div className="flex items-center gap-3 cursor-pointer select-none" onClick={() => onNavigate("")} id="logo-branding">
-          <img 
-            src={darkMode ? "/logo-dark.png" : "/logo-light.png"} 
-            alt="Typeform" 
-            className="h-7 md:h-8 object-contain transition-all" 
-            referrerPolicy="no-referrer"
+          <Logo 
+            darkMode={darkMode} 
+            className="h-7 md:h-8 transition-all" 
           />
         </div>
 

@@ -21,6 +21,7 @@ import {
 import { Form, Question, FormStats, Submission } from "../types";
 import { useAuth } from "../context/AuthContext";
 import { apiFetch } from "../lib/api";
+import { Logo } from "./Logo";
 
 interface ResultsProps {
   formId: string;
@@ -112,11 +113,9 @@ export default function Results({
           </button>
 
           <div className="flex items-center gap-2.5 cursor-pointer select-none" onClick={() => onNavigate("")} id="logo-branding">
-            <img 
-              src={darkMode ? "/logo-dark.png" : "/logo-light.png"} 
-              alt="Typeform" 
-              className="h-6 md:h-7 object-contain transition-all" 
-              referrerPolicy="no-referrer"
+            <Logo 
+              darkMode={darkMode} 
+              className="h-6 md:h-7 transition-all" 
             />
           </div>
 

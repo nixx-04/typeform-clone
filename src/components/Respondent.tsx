@@ -14,6 +14,7 @@ import {
   Moon
 } from "lucide-react";
 import { Form, Question, FormTheme } from "../types";
+import { Logo } from "./Logo";
 
 interface RespondentProps {
   shareLink: string;
@@ -330,11 +331,9 @@ export default function Respondent({
       <header className="h-12 px-6 border border-black dark:border-zinc-700 bg-white dark:bg-[#1C1C1E] shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] dark:shadow-[2px_2px_0px_0px_rgba(167,139,250,0.15)] flex items-center justify-between shrink-0 text-[10px] uppercase font-bold tracking-widest text-black dark:text-zinc-200">
         <div className="flex items-center gap-1.5" id="logo-branding">
           <span className="text-[9px] uppercase tracking-wider text-gray-400 dark:text-zinc-500 font-bold">Powered by</span>
-          <img 
-            src={darkMode ? "/logo-dark.png" : "/logo-light.png"} 
-            alt="Typeform" 
-            className="h-4 object-contain transition-all" 
-            referrerPolicy="no-referrer"
+          <Logo 
+            darkMode={darkMode} 
+            className="h-4 transition-all" 
           />
         </div>
         <div className="flex items-center gap-4">
